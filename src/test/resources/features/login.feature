@@ -32,10 +32,13 @@ Feature: Login Test- The user should be able to login with valid credentials
       | user             | password | welcomeUser              |
       | sgezer@gmail.com | 12345678 | Welcome sgezer@gmail.com |
 
-  @loginwithDataTable @wip
+
+
+
+  @loginwithDataTable
   Scenario: Positive Scenario 5 - user should be able to login
     When The user enters valid username and password
-      | username | sgezer@gmail.com     |
-      | password | 12345678 |
+      | username | sgezer@gmail.com |
+      | password | 12345678         |
     Then Verify welcome "Welcome sgezer@gmail.com"
 

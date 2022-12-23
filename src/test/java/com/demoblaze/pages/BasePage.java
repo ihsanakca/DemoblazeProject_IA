@@ -11,5 +11,12 @@ public abstract class BasePage {
     }
 
     @FindBy(id = "login2")
+
     public WebElement loginHomePage;
+
+    @FindBy(xpath = "(//a[@class='nav-link'])[1]")     ////a[text()='Home '] yedek
+    public WebElement homeLink_loc;
+
+    @FindBy(xpath = "//a[text()='Cart']")
+    public WebElement cartPage_loc;
 }
